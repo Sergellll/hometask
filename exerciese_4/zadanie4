@@ -1,0 +1,27 @@
+4.1
+
+NAT.replace('Fast', 'Gigabit')
+
+
+tchport trunk allowed vlan 1,3,10,20,30,100'
+config2 = config.split()
+vlans = config2[-1].split(",")
+print(vlans)
+['1', '3', '10', '20', '30', '100']
+
+
+
+
+vlans = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
+set(vlans)
+{1, 2, 3, 4, 10, 20, 30, 100}
+
+
+In [29]: command1 = 'switchport trunk allowed vlan 1,2,3,5,8'
+In [30]: command2 = 'switchport trunk allowed vlan 1,3,8,9'
+
+vlans1 = command1.split()[-1].split(',')
+vlans2 = command2.split()[-1].split(',')
+
+In [36]: set(vlans1) & set(vlans2)
+Out[36]: {'1', '3', '8'}
