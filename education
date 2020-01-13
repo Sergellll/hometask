@@ -1,0 +1,35 @@
+Какие метрики и какими инструментами нужно замониторить в Istio.
+Key metrics for monitoring Istio
+https://www.datadoghq.com/blog/istio-metrics
+Istio monitoring tools
+https://www.datadoghq.com/blog/istio-monitoring-tools
+
+
+видео с devopsdays https://www.youtube.com/playlist?list=PL7zoudiRHpqULbBPn3mzNInNQxmBHSlja
+
+https://github.com/pycontribs/ansible-readme - генератор readme файлов из ансибл ролей
+
+https://habr.com/ru/company/otus/blog/478416/ - Service mesh для микросервисов. Часть III. Более глубокий взгляд на Istio
+
+Побаловался ansible + mitogen , cборка кластера k8s (450 тасок)заняла 9 минут,
+без mitogen сборка кластера заняла 27 минут  .Профит почти в 3 раза !
+
+pip install mitogen
+[2:39 PM]
+export ANSIBLE_STRATEGY_PLUGINS=‘/Users/Anton.Verlan/venv/lib/python2.7/site-packages/ansible_mitogen/plugins/strategy’
+export ANSIBLE_STRATEGY=‘mitogen_linear’
+
+
+https://github.com/bykvaadm/OS/tree/master/devops/ansible - лабы по ansible
+
+https://habr.com/ru/post/439382/ - Использование Ansible, Terraform, Docker, Consul, Nomad в облаках (Алексей Вахов, Учи.ру)
+
+
+https://habr.com/post/435802/ - OpenVPN, о котором вы так мало знали
+
+https://habr.com/company/rusonyx/blog/433458/ - Некоторые неочевидные преимущества Serverless для DevOps
+
+https://habr.com/company/otus/blog/433358/ - Знакомство с тестированием в Python. Ч.1
+
+https://habr.com/post/431394/ - Любопытные извращения из мира ИТ
+
