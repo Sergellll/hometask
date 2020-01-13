@@ -43,3 +43,4 @@ https://github.com/prometheus/node_exporter#disabled-by-default
 Push_gateway можно кстати через node_exporter реализовать
 https://github.com/prometheus/node_exporter#textfile-collector
 
+https://habr.com/ru/company/pixonic/blog/341274/ - настройка graylog2.2
