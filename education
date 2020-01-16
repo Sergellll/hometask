@@ -55,3 +55,31 @@ https://habr.com/ru/post/129664/  -  Ещё раз про сети
 
 
 https://medium.com/@alvirmob - Александр Вир
+
+
+
+
+
+у меня настроено так в ~/.zshrc, добавляй параметры на свое усмотрение
+HISTFILE=~/.zsh_history
+## Число команд, сохраняемых в HISTFILE
+SAVEHIST=5000
+## Чucлo команд, coxpaняeмыx в сеансе
+HISTSIZE=5000
+DIRSTACKSIZE=20
+# Опции истории команд
+#Добавляет в историю время выполнения команды.
+setopt extended_history
+alias history='fc -il 1'
+#История становится общей между всеми сессиями / терминалами.
+setopt share_history
+# Дополнение файла истрии
+setopt  APPEND_HISTORY
+#Добавить команду в историю не после выполнения а перед
+setopt INC_APPEND_HISTORY
+# Игнopupoвaть вce пoвтopeнuя команд
+setopt  HIST_IGNORE_ALL_DUPS
+# Удалять из файл истории пустые строки
+setopt  HIST_REDUCE_BLANKS
+# команды «history» и «fc» в историю заноситься не будут
+setopt HIST_NO_STORE
