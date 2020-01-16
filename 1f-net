@@ -1,0 +1,14 @@
+корректные роуты для app сервера
+
+sergey.lanin@officewrk ~> route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.15.1    0.0.0.0         UG    0      0        0 eth0
+192.168.3.0     192.168.15.1    255.255.255.0   UG    0      0        0 eth0
+192.168.15.0    0.0.0.0         255.255.255.0   U     100    0        0 eth0
+192.168.88.0    192.168.15.1    255.255.255.0   UG    0      0        0 eth0
+
+
+sudo route add default gw 192.168.15.1  -  если после перезагрузки отвалится интернет на app машине (edited) 
+
+sudo iptables -t nat -A POSTROUTING -s 192.168.15.0/24 -o enp0s3  -j SNAT --to-source 192.168.1.5
