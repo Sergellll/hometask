@@ -83,3 +83,12 @@ setopt  HIST_IGNORE_ALL_DUPS
 setopt  HIST_REDUCE_BLANKS
 # команды «history» и «fc» в историю заноситься не будут
 setopt HIST_NO_STORE
+
+
+
+
+#use docker witout sudo every day
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
